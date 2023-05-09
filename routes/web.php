@@ -27,5 +27,9 @@ Route::get('/', function () {
         'SHOP',
     ];
 
-    return view(('home'), compact('linksList'));
+    $comics = config('comics');
+    dd($comics);
+
+
+    return view(('home'), compact('linksList', 'comics'));
 })->name('home');

@@ -14,6 +14,9 @@ header {
             padding: 0.3em 0;
         }
     }
+    .img-container {
+        padding-bottom: 1em;
+    }
     ul {
         gap: 20px;
         font-weight: bold;
@@ -49,5 +52,10 @@ header {
                 background: #0282f9;
             }
         }
+    }
+    .jumbotron {
+        background-image: url("../img/jumbotron.jpg");
+        height: 300px;
+        background-size: cover;
     }
 }
