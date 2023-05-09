@@ -53,7 +53,7 @@ Route::get('/', function () {
   $footerLinksList =
     [
       [
-        "text" => "DC COMICS",
+        "title" => "DC COMICS",
         "contents" => [
           "Characters",
           "Comics",
@@ -65,14 +65,14 @@ Route::get('/', function () {
         ]
       ],
       [
-        "text" => "SHOP",
+        "title" => "SHOP",
         "contents" => [
           "Shop DC",
           "Shop DC Collectibles"
         ]
       ],
       [
-        "text" => "DC",
+        "title" => "DC",
         "contents" => [
           "Terms Of Use",
           "Privacy Policy (New)",
@@ -88,7 +88,7 @@ Route::get('/', function () {
         ]
       ],
       [
-        "text" => "SITES",
+        "title" => "SITES",
         "contents" => [
           "DC",
           "MAD Magazine",
@@ -99,9 +99,17 @@ Route::get('/', function () {
       ],
     ];
 
+  $socialIcons = [
+    "footer-facebook.png",
+    "footer-twitter.png",
+    "footer-youtube.png",
+    "footer-pinterest.png",
+    "footer-periscope.png",
+  ];
+
   $comics = config('comics');
   // dd($footerLinksList);
 
 
-  return view(('home'), compact('linksList', 'comics', 'iconsList', 'footerLinksList'));
+  return view(('home'), compact('linksList', 'comics', 'iconsList', 'footerLinksList', 'socialIcons'));
 })->name('home');

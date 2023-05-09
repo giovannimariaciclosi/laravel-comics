@@ -148,3 +148,106 @@
         }
     }
 }
+
+footer {
+    #main-container {
+        color: white;
+        background-image: url("../img/footer-bg.jpg");
+        min-height: 370px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .linklist {
+            background-image: url("../img/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-position: right;
+
+            display: flex;
+            gap: 50px;
+
+            min-height: 370px;
+            padding: 2em 0;
+
+            .list-container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                .list-title {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    padding-bottom: 0.6em;
+                }
+
+                .list {
+                    color: #959595;
+                    padding-bottom: 0.6em;
+                    font-size: 0.8em;
+                    list-style-type: none;
+                    padding-left: 0;
+
+                    li {
+                        cursor: pointer;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            color: #959595;
+            font-size: 0.8em;
+
+            span {
+                color: #0282f9;
+            }
+        }
+    }
+
+    #last-section-container {
+        background-color: #303030;
+        color: white;
+
+        .container {
+            padding: 2em 0;
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+
+            button {
+                padding: 8px 15px;
+                background-color: transparent;
+                border: 2px solid #0282f9;
+                font-weight: bold;
+                color: white;
+
+                &:hover {
+                    background-color: #0282f9;
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                .social-text {
+                    color: #0282f9;
+                    font-weight: bold;
+                }
+
+                .social-icon-container {
+                    display: flex;
+                    gap: 15px;
+                    cursor: pointer;
+
+                    img {
+                        max-width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
