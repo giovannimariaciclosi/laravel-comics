@@ -21,7 +21,7 @@
     <div class="container">
       @foreach ($iconsList as $singleIcon)
         <div class="card-container">
-          <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="Digital comics" />
+          <img src="{{ Vite::asset('resources/img/' . $singleIcon['image']) }}" alt="Digital comics" />
           <div class="card-text">{{ $singleIcon['text'] }}</div>
         </div>
       @endforeach

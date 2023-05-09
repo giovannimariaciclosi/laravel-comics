@@ -28,7 +28,7 @@
         <div class="social-text">FOLLOW US</div>
         <div class="social-icon-container">
           @foreach ($socialIcons as $singleIcon)
-            <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="Digital comics" />
+            <img src="{{ Vite::asset('resources/img/' . $singleIcon) }}" alt="Digital comics" />
           @endforeach
         </div>
       </div>
