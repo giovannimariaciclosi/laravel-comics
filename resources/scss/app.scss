@@ -1,6 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
 
-header {
+@mixin button($color) {
+    background-color: $color;
+    padding: 0.5em 1.5em;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+#header {
     .top-banner {
         background-color: #0282f9;
         color: white;
@@ -21,6 +32,7 @@ header {
         gap: 20px;
         font-weight: bold;
         list-style-type: none;
+        flex-wrap: wrap;
 
         li {
             cursor: pointer;
@@ -57,5 +69,82 @@ header {
         background-image: url("../img/jumbotron.jpg");
         height: 300px;
         background-size: cover;
+    }
+}
+
+#card-section {
+    background-color: #1c1c1c;
+    .container {
+        padding: 2em 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+
+        .current-btn {
+            @include button(#0282f9);
+            font-size: 1.2em;
+            position: absolute;
+            z-index: 2;
+            top: -22px;
+            left: 0;
+        }
+
+        .card {
+            max-width: 180px;
+            background-color: #1c1c1c;
+            padding-top: 2em;
+            border: none;
+            cursor: pointer;
+
+            .thumb {
+                width: 100%;
+            }
+
+            .series {
+                padding-top: 0.8em;
+                text-transform: uppercase;
+                font-size: 0.8em;
+                color: white;
+            }
+        }
+    }
+    .btn-container {
+        padding-top: 0;
+        .load-more-btn {
+            @include button(#0282f9);
+            padding: 0.8em 5em;
+            font-size: 0.8em;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+#icon-section {
+    background-color: #0282f9;
+    color: white;
+    .container {
+        padding: 2.5em 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .card-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 190px;
+        cursor: pointer;
+
+        img {
+            max-width: 50px;
+            max-height: 50px;
+        }
     }
 }

@@ -1,4 +1,4 @@
-<header>
+<header id="header">
   <div class="top-banner">
     <div class="container">
       <div>DC POWER VISA</div>
@@ -16,4 +16,5 @@
     </ul>
   </div>
   <div class="jumbotron"></div>
+  
 </header>

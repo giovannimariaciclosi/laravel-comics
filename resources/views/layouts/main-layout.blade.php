@@ -15,7 +15,7 @@
 
 </head>
 
-<body id="homepage">
+<body id="home">
   @include('partials/header')
 
   @yield('content')
