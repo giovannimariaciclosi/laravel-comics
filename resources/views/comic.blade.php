@@ -1,4 +1,4 @@
-@extends('layouts/comic')
+@extends('layouts/main-layout')
 
 @section('content')
 <main>
